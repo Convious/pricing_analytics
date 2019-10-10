@@ -1,6 +1,6 @@
 {
   "name": "@convious/convious-analytics",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A library that allows recording page views and transactions for Convious pricing API",
   "main": "dist/index.js",
   "repository": "https://github.com/Convious/pricing_analytics",
@@ -11,13 +11,13 @@
     "build": "webpack --config webpack.config.ts --mode production --colors"
   },
   "dependencies": {
-    "core-js": "^3.2.1",
-    "typescript": "^3.6.3"
+    "core-js": "^3.2.1"
   },
   "devDependencies": {
     "@types/webpack": "^4.39.2",
     "ts-loader": "^6.2.0",
     "ts-node": "^8.4.1",
+    "typescript": "^3.6.3",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9"
   }
