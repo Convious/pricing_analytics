@@ -1,6 +1,6 @@
 {
-  "name": "convious_pricing_analytics",
-  "version": "1.0.0",
+  "name": "@convious/convious-analytics",
+  "version": "1.0.1",
   "description": "A library that allows recording page views and transactions for Convious pricing API",
   "main": "dist/index.js",
   "repository": "https://github.com/Convious/pricing_analytics",
