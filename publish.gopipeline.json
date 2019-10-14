@@ -27,12 +27,12 @@
                         {
                             "type": "exec",
                             "command": "/bin/bash",
-                            "arguments": [ "-c", "{ echo \"$NPM_USER\"; sleep 1; echo \"$NPM_EMAIL\"; } | yarn login" ]
+                            "arguments": [ "-c", "expect yarn-login.exp" ]
                         },
                         {
                             "type": "exec",
                             "command": "/bin/bash",
-                            "arguments": [ "-c", "{ echo \"$NPM_PASSWORD\"; } | yarn publish --access public --new-version $(cat package.json | jq -r \".version\")" ]
+                            "arguments": [ "-c", "expect yarn-publish.exp" ]
                         }
                     ],
                     "artifacts": []
