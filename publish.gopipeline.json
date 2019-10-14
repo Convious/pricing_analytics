@@ -27,7 +27,7 @@
                         {
                             "type": "exec",
                             "command": "/bin/bash",
-                            "arguments": [ "-c", "expect npm-login.exp" ]
+                            "arguments": [ "-c", "yarn config set //registry.yarnpkg.com/:_authToken $NPM_TOKEN" ]
                         },
                         {
                             "type": "exec",
