@@ -27,12 +27,12 @@
                         {
                             "type": "exec",
                             "command": "/bin/bash",
-                            "arguments": [ "-c", "expect yarn-login.exp" ]
+                            "arguments": [ "-c", "expect npm-login.exp" ]
                         },
                         {
                             "type": "exec",
                             "command": "/bin/bash",
-                            "arguments": [ "-c", "expect yarn-publish.exp $(cat package.json | jq -r .version)" ]
+                            "arguments": [ "-c", "yarn publish --access public --new-version $(cat package.json | jq -r .version)" ]
                         }
                     ],
                     "artifacts": []

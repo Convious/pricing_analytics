@@ -1,6 +1,0 @@
-set timeout 10
-spawn yarn login
-expect "npm username:" { send "$env(NPM_USER)\n" }
-expect "npm email:" { send "$env(NPM_EMAIL)\n" }
-interact
-

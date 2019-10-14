@@ -1,0 +1,7 @@
+set timeout 10
+spawn npm login
+expect "Username:" { send "$env(NPM_USER)\n" }
+expect "Password:" { send "$env(NPM_PASSWORD)\n" }
+expect "Email:" { send "$env(NPM_EMAIL)\n" }
+interact
+
