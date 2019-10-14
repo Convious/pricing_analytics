@@ -27,6 +27,11 @@
                         {
                             "type": "exec",
                             "command": "/bin/bash",
+                            "arguments": [ "-c", "yarn" ]
+                        },
+                        {
+                            "type": "exec",
+                            "command": "/bin/bash",
                             "arguments": [ "-c", "echo \"//registry.yarnpkg.com/:_authToken=$NPM_TOKEN\" >>~/.npmrc" ]
                         },
                         {
