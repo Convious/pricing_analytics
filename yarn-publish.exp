@@ -1,6 +1,7 @@
 set timeout 10
 set version [lindex $argv 0]
-spawn yarn publish --access public --new-version $version
+spawn yarn publish --access public
+expect "New version:" { send "$version\n" }
 expect "npm password:" { send "$env(NPM_PASSWORD)\n" }
 interact
 
