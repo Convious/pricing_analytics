@@ -32,7 +32,7 @@
                         {
                             "type": "exec",
                             "command": "/bin/bash",
-                            "arguments": [ "-c", "expect yarn-publish.exp" ]
+                            "arguments": [ "-c", "expect yarn-publish.exp $(cat package.json | jq -r .version)" ]
                         }
                     ],
                     "artifacts": []

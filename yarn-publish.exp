@@ -1,5 +1,6 @@
 set timeout 10
-spawn bash -c "yarn publish --access public --new-version \$(cat package.json | jq -r .version)"
+set version [lindex $argv 0]
+spawn yarn publish --access public --new-version $version
 expect "npm password:" { send "$env(NPM_PASSWORD)\n" }
 interact
 
