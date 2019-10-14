@@ -53,7 +53,7 @@ export function logUserAddedAnItemToCart() {
     return logEvent('UserAddedAnItemToCart', {})
 }
 
-interface OrderItem {
+export interface OrderItem {
     productId: string
     amount: number
     price: number
@@ -61,7 +61,7 @@ interface OrderItem {
     location?: string
 }
 
-interface OrderData {
+export interface OrderData {
     orderId: string
     items: OrderItem[]
 }

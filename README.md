@@ -112,13 +112,13 @@ conviousPricing.logOrderCreated({
         productId: '<product_id>',
         amount: 2,
         price: 12.99,
-        eventDate: '2018-04-01',
+        eventDate: new Date(2018, 4, 1),
         location: 'Almere',
     }, {
         productId: '<product_id>',
         amount: 1,
         price: 11.99,
-        eventDate: '2018-04-01',
+        eventDate: new Date(2018, 4, 1),
         location: 'Almere',
     }]
 });
