@@ -7,7 +7,7 @@ This is a JavaScript library, similar to Google Analytics, that should be added 
 ### By adding a `script` tag
 
 ```html
-<script type="text/javascript" src="https://resources.convious.com/analytics.js"></script>
+<script type="text/javascript" src="https://scripts.convious.com/analytics.js"></script>
 ```
 
 You can add our script to the `head` element of your website. In order to function properly, this script must be present on every page.
